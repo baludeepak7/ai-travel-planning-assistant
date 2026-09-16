@@ -167,7 +167,6 @@ scenarios. Production uses real services.
 
 - [Sample questions and recorded responses](docs/sample_responses.md)
 - [Acceptance criteria and deliverable status](docs/acceptance_checklist.md)
-- [Demonstration script](docs/demo_script.md)
 - [Live acceptance capture](docs/acceptance_results.json)
 - [Official-source answers](docs/official_sources_results.json)
 
