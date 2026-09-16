@@ -61,7 +61,6 @@ OPENAI_EMBEDDING_MODEL=text-embedding-3-small
 
 With `local`, the OpenAI embedding setting is unused. Local embeddings download their model
 on first use. Provider calls require internet access and may incur API usage charges.
-Do not share `.env` or include it in a submission.
 
 Build the index once, check setup and start:
 
@@ -172,18 +171,5 @@ scenarios. Production uses real services.
 - [Live acceptance capture](docs/acceptance_results.json)
 - [Official-source answers](docs/official_sources_results.json)
 
-Keep `tests/` to reproduce validation. It is not needed to serve the app, but deleting it
-removes the documented automated checks.
 
-## Deliverables and limitations
 
-Source code, the application, knowledge documents, technical documentation, sample responses
-and a demonstration script are provided. A recorded or presented demonstration still needs
-completion. The brief requests source code in a Git repository; repository submission remains
-outstanding. Git is not required for local execution.
-
-The assistant supports Singapore only. Knowledge snapshots are dated and incomplete; prices,
-hours and entry rules are not live verified. Weather is a daily forecast, not a live station
-observation. Exchange rates exclude bank fees and retail spreads. Model verification is
-probabilistic, and answers may be withheld when evidence is insufficient. Conversation state
-is session-local. Booking, reservations, payments and navigation are outside the assignment scope.
