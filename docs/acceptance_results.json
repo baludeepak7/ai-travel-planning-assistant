@@ -1,0 +1,304 @@
+{
+  "captured_at": "2026-09-14T14:13:39.078747+00:00",
+  "checks": {
+    "three_sources_persisted": true,
+    "semantic_retrieval_and_metadata": true,
+    "mcp_discovery": true,
+    "live_weather_through_mcp": true,
+    "live_currency_through_mcp": true,
+    "destination_kb": true,
+    "kb_weather": true,
+    "kb_currency": true,
+    "live_multiturn": true,
+    "missing_knowledge": true
+  },
+  "live_tool_results": {
+    "weather": {
+      "ok": true,
+      "provider": "Open-Meteo",
+      "source_url": "https://api.open-meteo.com/v1/forecast",
+      "destination": "Singapore",
+      "fetched_at": "2026-09-14T14:13:45.827201+00:00",
+      "forecast": [
+        {
+          "date": "2026-09-21",
+          "condition": "Drizzle",
+          "weather_code": 51,
+          "temperature_min_c": 25.3,
+          "temperature_max_c": 30.9,
+          "precipitation_probability_max": 79.0
+        },
+        {
+          "date": "2026-09-22",
+          "condition": "Drizzle",
+          "weather_code": 53,
+          "temperature_min_c": 25.8,
+          "temperature_max_c": 28.6,
+          "precipitation_probability_max": 80.0
+        },
+        {
+          "date": "2026-09-23",
+          "condition": "Drizzle",
+          "weather_code": 55,
+          "temperature_min_c": 25.4,
+          "temperature_max_c": 29.6,
+          "precipitation_probability_max": 75.0
+        }
+      ]
+    },
+    "currency": {
+      "ok": true,
+      "provider": "Frankfurter",
+      "source_url": "https://frankfurter.dev/",
+      "fetched_at": "2026-09-14T14:13:49.818967+00:00",
+      "amount": 60000.0,
+      "from_currency": "INR",
+      "to_currency": "SGD",
+      "rate": 0.01328,
+      "converted_amount": 796.8,
+      "rate_date": "2026-09-14"
+    }
+  },
+  "multiturn": {
+    "preferences": {
+      "destination": "Singapore",
+      "trip_start_date": "2026-09-21",
+      "trip_days": 3,
+      "adults": 2,
+      "children": 2,
+      "budget_amount": null,
+      "budget_currency": null,
+      "interests": [],
+      "pace": "relaxed",
+      "mobility_notes": "Avoid too much walking",
+      "food_preferences": []
+    },
+    "response": {
+      "markdown": "### MCP Current Information \u2014 Weather\n\n- 2026-09-21: Drizzle; 25.3\u201330.9 \u00b0C; rain probability 79.0%.\n\n- 2026-09-22: Drizzle; 25.8\u201328.6 \u00b0C; rain probability 80.0%.\n\n- 2026-09-23: Drizzle; 25.4\u201329.6 \u00b0C; rain probability 75.0%.\n\n_MCP tool: `get_weather_forecast`; provider: Open-Meteo; fetched: 2026-09-14T14:14:47.613501+00:00._\n\n### Knowledge Base\n\n_Dated source excerpts; descriptions of exhibitions, prices and hours are not verified current information._\n\n- Rain falls almost daily throughout the year, usually in sudden, heavy showers that rarely last longer than an hour. [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n- Rain falls almost daily throughout the year, usually in sudden, heavy showers that rarely last longer than an hour. [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n- Rain falls almost daily throughout the year, usually in sudden, heavy showers that rarely last longer than an hour. [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n- All public buses in Singapore are air conditioned and wheelchair accessible. [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n- The gardens house two cooled conservatories housed in giant glass domes, the Flower Dome simulating a dry-climate area and the Cloud Forest for more tropical highlands plants. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- ArtScience Museum is part of the Marina Bay Sands integrated resort. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n### AI Recommendation\n\n#### Day 1: Marina Bay indoor focus\nStart with ArtScience Museum, then keep the rest of the day around Marina Bay with a low-walking pace.\n\n**Weather consideration:** Because drizzle is expected, prioritize the museum first and use public transport where possible.\n\n**Indoor alternative:** ArtScience Museum is the indoor fallback for this day.\n\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n#### Day 2: Gardens by the Bay conservatories\nVisit the cooled conservatories at Gardens by the Bay and keep the day centered on sheltered attractions.\n\n**Weather consideration:** With rain likely, the conservatories are a better choice than outdoor gardens.\n\n**Indoor alternative:** The Flower Dome and Cloud Forest are the indoor alternatives at Gardens by the Bay.\n\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n#### Day 3: Food-first day with Little India and transport by bus\nUse a slower, lower-walking day by combining a food stop in Little India with short trips on public buses.\n\n**Weather consideration:** Drizzle on this day makes short rides and food stops more practical than a mostly outdoor plan.\n\n**Indoor alternative:** If you want another indoor stop, return to a museum such as ArtScience Museum.\n\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n### Knowledge-base limitations\n- The knowledge base does not contain enough Singapore attractions to build a fuller 3-day rain plan with more destination variety.\n- The knowledge base does not contain current verified opening times, ticket prices, or walking-distance data for these options.\n\n_AI planning note: sequencing, grouping and substitutions are AI-generated recommendations based on cited knowledge and the MCP results shown above._\n\n### Knowledge-base sources\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n_Retrieved text: Wikivoyage contributors, CC BY-SA 4.0. Sources are dated travel knowledge, not verified current prices or rules._",
+      "provenance": {
+        "route": "kb_weather",
+        "rag_ran": true,
+        "sources": [
+          {
+            "source_id": "wikivoyage_singapore",
+            "source_title": "Singapore \u2013 Travel guide at Wikivoyage",
+            "source_url": "https://en.wikivoyage.org/wiki/Singapore",
+            "section": "Get around / By bus",
+            "document_type": "travel_knowledge"
+          },
+          {
+            "source_id": "wikivoyage_marina_bay",
+            "source_title": "Singapore/Marina Bay \u2013 Travel guide at Wikivoyage",
+            "source_url": "https://en.wikivoyage.org/wiki/Singapore/Marina_Bay",
+            "section": "See / Gardens and parks",
+            "document_type": "travel_knowledge"
+          }
+        ],
+        "tools": {
+          "get_weather_forecast": {
+            "ok": true,
+            "provider": "Open-Meteo",
+            "source_url": "https://api.open-meteo.com/v1/forecast",
+            "destination": "Singapore",
+            "fetched_at": "2026-09-14T14:14:47.613501+00:00",
+            "forecast": [
+              {
+                "date": "2026-09-21",
+                "condition": "Drizzle",
+                "weather_code": 51,
+                "temperature_min_c": 25.3,
+                "temperature_max_c": 30.9,
+                "precipitation_probability_max": 79.0
+              },
+              {
+                "date": "2026-09-22",
+                "condition": "Drizzle",
+                "weather_code": 53,
+                "temperature_min_c": 25.8,
+                "temperature_max_c": 28.6,
+                "precipitation_probability_max": 80.0
+              },
+              {
+                "date": "2026-09-23",
+                "condition": "Drizzle",
+                "weather_code": 55,
+                "temperature_min_c": 25.4,
+                "temperature_max_c": 29.6,
+                "precipitation_probability_max": 75.0
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "missing_knowledge_response": {
+    "markdown": "### Knowledge Base\n\n_Dated source excerpts; descriptions of exhibitions, prices and hours are not verified current information._\n\n- It hosts mainly international travelling exhibitions. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- The current permanent exhibition, Future World, is billed as \"Where Art Meets Science\", invites visitors to enter a futuristic world of high-tech interactive artworks and immerse themselves in a world of art, science, magic and metaphor through a collection of cutting-edge digital installations. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- The current permanent exhibition, Future World, is billed as \"Where Art Meets Science\", invites visitors to enter a futuristic world of high-tech interactive artworks and immerse themselves in a world of art, science, magic and metaphor through a collection of cutting-edge digital installations. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- The current permanent exhibition, Future World, is billed as \"Where Art Meets Science\", invites visitors to enter a futuristic world of high-tech interactive artworks and immerse themselves in a world of art, science, magic and metaphor through a collection of cutting-edge digital installations. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- History and museums : The Bras Basah area east of Orchard and north of the Singapore River is Singapore's colonial core, with historical buildings and museums. [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n- Next door is Fort Siloso , an authentic colonial-era British fort, where you are introduced to life as a soldier of the British Empire and taken through various well-done exhibits covering Singapore during World War II. [Three days in Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Three_days_in_Singapore)\n\n### AI Recommendation\n\n#### If you meant exhibit-style visits in Singapore, start with ArtScience Museum\nVisit ArtScience Museum for its listed permanent exhibition Future World and for the museum\u2019s international travelling exhibitions.\n\n**Indoor alternative:** Nationally supported indoor museum visits are not described further in the knowledge base beyond ArtScience Museum and Fort Siloso.\n\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n#### For history-focused exhibits, consider Fort Siloso\nFort Siloso is described as having exhibits covering Singapore during World War II, so it is a grounded option if you want a history-oriented visit.\n\n**Indoor alternative:** A museum visit in Bras Basah is another grounded indoor-style option mentioned by the guide.\n\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n- [Three days in Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Three_days_in_Singapore)\n\n### Knowledge-base limitations\n- The knowledge base does not contain any place called the fictional \"Merlion Moon Observatory\".\n- The knowledge base does not list exhibits specifically at that fictional location.\n\n_AI planning note: sequencing, grouping and substitutions are AI-generated recommendations based on cited knowledge and the MCP results shown above._\n\n### Knowledge-base sources\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n- [Three days in Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Three_days_in_Singapore)\n\n_Retrieved text: Wikivoyage contributors, CC BY-SA 4.0. Sources are dated travel knowledge, not verified current prices or rules._",
+    "provenance": {
+      "route": "destination_kb",
+      "rag_ran": true,
+      "sources": [
+        {
+          "source_id": "wikivoyage_marina_bay",
+          "source_title": "Singapore/Marina Bay \u2013 Travel guide at Wikivoyage",
+          "source_url": "https://en.wikivoyage.org/wiki/Singapore/Marina_Bay",
+          "section": "See / Marina Bay Sands",
+          "document_type": "travel_knowledge"
+        },
+        {
+          "source_id": "wikivoyage_singapore",
+          "source_title": "Singapore \u2013 Travel guide at Wikivoyage",
+          "source_url": "https://en.wikivoyage.org/wiki/Singapore",
+          "section": "Buy / Souvenirs",
+          "document_type": "travel_knowledge"
+        },
+        {
+          "source_id": "wikivoyage_three_days",
+          "source_title": "Three days in Singapore \u2013 Travel guide at Wikivoyage",
+          "source_url": "https://en.wikivoyage.org/wiki/Three_days_in_Singapore",
+          "section": "Day 1 / Evening",
+          "document_type": "travel_knowledge"
+        }
+      ],
+      "tools": {}
+    }
+  },
+  "responses": [
+    {
+      "question": "What are the must-visit attractions in Singapore?",
+      "markdown": "### Knowledge Base\n\n_Dated source excerpts; descriptions of exhibitions, prices and hours are not verified current information._\n\n- The free outdoor gardens are themed around plants important to Singapore history and culture. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- The gardens house two cooled conservatories housed in giant glass domes, the Flower Dome simulating a dry-climate area and the Cloud Forest for more tropical highlands plants. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- ArtScience Museum is part of the Marina Bay Sands integrated resort. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- It is the world's first ArtScience museum and the largest private museum in Singapore. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- Culture and cuisine : See Chinatown for Chinese treats, Little India for Indian flavours, Geylang Serai for a Malay experience or the East Coast for Eurasian and Peranakan culture and delicious seafood, including the famous chilli and black pepper crab. [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n- History and museums : The Bras Basah area east of Orchard and north of the Singapore River is Singapore's colonial core, with historical buildings and museums. [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n- Beaches and tourist resorts : Head to one of the three beaches on Sentosa or its southern islands. [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n### AI Recommendation\n\n#### Marina Bay highlights\nPrioritize Gardens by the Bay for the outdoor gardens and the Super trees, then add the ArtScience Museum if you want a museum stop in the same general area.\n\n**Indoor alternative:** The Gardens by the Bay conservatory domes or ArtScience Museum.\n\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n#### Culture and heritage circuit\nVisit Chinatown, Little India, Geylang Serai, or the Bras Basah area to focus on culture, food, and heritage sights.\n\n**Indoor alternative:** Bras Basah area museums.\n\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n#### Beach and resort option\nIf you want a leisure-focused attraction, head to Sentosa for one of its beaches; the East Coast is another beach area mentioned in the guide.\n\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n_AI planning note: sequencing, grouping and substitutions are AI-generated recommendations based on cited knowledge and the MCP results shown above._\n\n### Knowledge-base sources\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n_Retrieved text: Wikivoyage contributors, CC BY-SA 4.0. Sources are dated travel knowledge, not verified current prices or rules._",
+      "provenance": {
+        "route": "destination_kb",
+        "rag_ran": true,
+        "sources": [
+          {
+            "source_id": "wikivoyage_singapore",
+            "source_title": "Singapore \u2013 Travel guide at Wikivoyage",
+            "source_url": "https://en.wikivoyage.org/wiki/Singapore",
+            "section": "Get around / By bus",
+            "document_type": "travel_knowledge"
+          },
+          {
+            "source_id": "wikivoyage_marina_bay",
+            "source_title": "Singapore/Marina Bay \u2013 Travel guide at Wikivoyage",
+            "source_url": "https://en.wikivoyage.org/wiki/Singapore/Marina_Bay",
+            "section": "See / Gardens and parks",
+            "document_type": "travel_knowledge"
+          }
+        ],
+        "tools": {}
+      }
+    },
+    {
+      "question": "Create a three-day Singapore itinerary for next week and adjust it according to the weather forecast.",
+      "markdown": "### MCP Current Information \u2014 Weather\n\n- 2026-09-21: Drizzle; 25.3\u201330.9 \u00b0C; rain probability 79.0%.\n\n- 2026-09-22: Drizzle; 25.8\u201328.6 \u00b0C; rain probability 80.0%.\n\n- 2026-09-23: Drizzle; 25.4\u201329.6 \u00b0C; rain probability 75.0%.\n\n_MCP tool: `get_weather_forecast`; provider: Open-Meteo; fetched: 2026-09-14T14:14:07.575853+00:00._\n\n### Knowledge Base\n\n_Dated source excerpts; descriptions of exhibitions, prices and hours are not verified current information._\n\n- You can select the activities that sound interesting to you and follow them in any order, including mixing and matching the morning/afternoon/evening sections from the three different itineraries as you like. [Three days in Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Three_days_in_Singapore)\n\n- The free outdoor gardens are themed around plants important to Singapore history and culture. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- The gardens house two cooled conservatories housed in giant glass domes, the Flower Dome simulating a dry-climate area and the Cloud Forest for more tropical highlands plants. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- ArtScience Museum is part of the Marina Bay Sands integrated resort. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- It hosts mainly international travelling exhibitions. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- Delicious and authentic Indian food can be had at Little India, including south Indian typical meals such as dosa ( thosai ) crepes, idli lentil-rice cakes and sambar soup, as well as north Indian meals including various curries, naan bread, chapati , tandoori chicken and more. [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n- All public buses in Singapore are air conditioned and wheelchair accessible. [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n### AI Recommendation\n\n#### Day 1: Marina Bay and Gardens by the Bay\nStart with the free outdoor gardens at Gardens by the Bay, then finish the evening with the light show at the Supertrees.\n\n**Weather consideration:** The forecast shows drizzle for this day, so it makes sense to favor the cooled conservatories and keep outdoor time flexible.\n\n**Indoor alternative:** If the drizzle makes outdoor time less appealing, move more of the day into the Gardens by the Bay conservatory domes.\n\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n#### Day 2: ArtScience Museum day\nSpend the day at ArtScience Museum and treat it as your main indoor activity for the day.\n\n**Weather consideration:** The forecast also shows drizzle for this day, so an indoor museum-focused plan fits well.\n\n**Indoor alternative:** If you want to stay entirely indoors, keep the museum as the main stop and avoid relying on outdoor sections of Marina Bay.\n\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n#### Day 3: Little India food and a relaxed city finish\nUse Little India for a food-focused day and choose Indian dishes such as dosa, idli, curries, naan, chapati, or tandoori chicken.\n\n**Weather consideration:** With drizzle still forecast, a food-led day with shorter transfers and fewer outdoor stops is a practical choice.\n\n**Indoor alternative:** If you want another indoor option, return to ArtScience Museum or the Gardens by the Bay conservatories.\n\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n### Knowledge-base limitations\n- The knowledge base does not contain enough information to verify current opening hours, ticket availability, or exact live prices for the listed attractions.\n\n_AI planning note: sequencing, grouping and substitutions are AI-generated recommendations based on cited knowledge and the MCP results shown above._\n\n### Knowledge-base sources\n- [Three days in Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Three_days_in_Singapore)\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n_Retrieved text: Wikivoyage contributors, CC BY-SA 4.0. Sources are dated travel knowledge, not verified current prices or rules._",
+      "provenance": {
+        "route": "kb_weather",
+        "rag_ran": true,
+        "sources": [
+          {
+            "source_id": "wikivoyage_three_days",
+            "source_title": "Three days in Singapore \u2013 Travel guide at Wikivoyage",
+            "source_url": "https://en.wikivoyage.org/wiki/Three_days_in_Singapore",
+            "section": "Understand",
+            "document_type": "travel_knowledge"
+          },
+          {
+            "source_id": "wikivoyage_singapore",
+            "source_title": "Singapore \u2013 Travel guide at Wikivoyage",
+            "source_url": "https://en.wikivoyage.org/wiki/Singapore",
+            "section": "Get around / By bus",
+            "document_type": "travel_knowledge"
+          },
+          {
+            "source_id": "wikivoyage_marina_bay",
+            "source_title": "Singapore/Marina Bay \u2013 Travel guide at Wikivoyage",
+            "source_url": "https://en.wikivoyage.org/wiki/Singapore/Marina_Bay",
+            "section": "See / Gardens and parks",
+            "document_type": "travel_knowledge"
+          }
+        ],
+        "tools": {
+          "get_weather_forecast": {
+            "ok": true,
+            "provider": "Open-Meteo",
+            "source_url": "https://api.open-meteo.com/v1/forecast",
+            "destination": "Singapore",
+            "fetched_at": "2026-09-14T14:14:07.575853+00:00",
+            "forecast": [
+              {
+                "date": "2026-09-21",
+                "condition": "Drizzle",
+                "weather_code": 51,
+                "temperature_min_c": 25.3,
+                "temperature_max_c": 30.9,
+                "precipitation_probability_max": 79.0
+              },
+              {
+                "date": "2026-09-22",
+                "condition": "Drizzle",
+                "weather_code": 53,
+                "temperature_min_c": 25.8,
+                "temperature_max_c": 28.6,
+                "precipitation_probability_max": 80.0
+              },
+              {
+                "date": "2026-09-23",
+                "condition": "Drizzle",
+                "weather_code": 55,
+                "temperature_min_c": 25.4,
+                "temperature_max_c": 29.6,
+                "precipitation_probability_max": 75.0
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "question": "I have a budget of INR 60,000. Convert it to SGD and suggest a three-day itinerary.",
+      "markdown": "### MCP Current Information \u2014 Currency\n\n60,000.00 INR = **796.80 SGD**. Rate: 0.01328; rate date: 2026-09-14.\n\nReference rate; bank fees and retail spreads are not included.\n\n_MCP tool: `convert_currency`; provider: Frankfurter; fetched: 2026-09-14T14:14:27.963753+00:00._\n\n### Knowledge Base\n\n_Dated source excerpts; descriptions of exhibitions, prices and hours are not verified current information._\n\n- If you have to pick one itinerary out of the three listed here, this is the one. [Three days in Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Three_days_in_Singapore)\n\n- Approximate cost per person for admissions and transport: $50. [Three days in Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Three_days_in_Singapore)\n\n- ArtScience Museum is part of the Marina Bay Sands integrated resort. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- The gardens house two cooled conservatories housed in giant glass domes, the Flower Dome simulating a dry-climate area and the Cloud Forest for more tropical highlands plants. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n- All public buses in Singapore are air conditioned and wheelchair accessible. [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n### AI Recommendation\n\n#### Day 1: Marina Bay highlights\nStart with Gardens by the Bay, then continue to the ArtScience Museum at Marina Bay Sands. Your INR 60,000 budget converts to 796.80 SGD, which gives you room for a city-center sightseeing day and still leaves a wide margin after the guide's dated three-day example cost.\n\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n#### Day 2: Culture and food in Little India\nSpend the day in Little India and focus on Indian food options there, including dosa, idli, sambar, curries, naan, chapati, and tandoori chicken. This is a good day to use Singapore's public transport network, including buses or the MRT, to move between stops.\n\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n#### Day 3: Follow the guide's three-day core sightseeing loop\nUse the guide's \"Tourist Loop\" as your final day and prioritize the classic tourist sights the guide associates with that route. If you want a lower-stress version of the loop, rely on buses where useful since they can get you closer to destinations, though they are slower than the MRT.\n\n- [Three days in Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Three_days_in_Singapore)\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n\n### Knowledge-base limitations\n- The knowledge base does not contain enough current pricing information to guarantee what this 796.80 SGD budget will cover for specific attractions today.\n- The knowledge base does not provide enough detail to build a more personalized three-day itinerary from your interests, since no interests were specified.\n\n_AI planning note: sequencing, grouping and substitutions are AI-generated recommendations based on cited knowledge and the MCP results shown above._\n\n### Knowledge-base sources\n- [Three days in Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Three_days_in_Singapore)\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n_Retrieved text: Wikivoyage contributors, CC BY-SA 4.0. Sources are dated travel knowledge, not verified current prices or rules._",
+      "provenance": {
+        "route": "kb_currency",
+        "rag_ran": true,
+        "sources": [
+          {
+            "source_id": "wikivoyage_three_days",
+            "source_title": "Three days in Singapore \u2013 Travel guide at Wikivoyage",
+            "source_url": "https://en.wikivoyage.org/wiki/Three_days_in_Singapore",
+            "section": "Day 1",
+            "document_type": "travel_knowledge"
+          },
+          {
+            "source_id": "wikivoyage_singapore",
+            "source_title": "Singapore \u2013 Travel guide at Wikivoyage",
+            "source_url": "https://en.wikivoyage.org/wiki/Singapore",
+            "section": "Get around / By bus",
+            "document_type": "travel_knowledge"
+          },
+          {
+            "source_id": "wikivoyage_marina_bay",
+            "source_title": "Singapore/Marina Bay \u2013 Travel guide at Wikivoyage",
+            "source_url": "https://en.wikivoyage.org/wiki/Singapore/Marina_Bay",
+            "section": "See / Gardens and parks",
+            "document_type": "travel_knowledge"
+          }
+        ],
+        "tools": {
+          "convert_currency": {
+            "ok": true,
+            "provider": "Frankfurter",
+            "source_url": "https://frankfurter.dev/",
+            "fetched_at": "2026-09-14T14:14:27.963753+00:00",
+            "amount": 60000.0,
+            "from_currency": "INR",
+            "to_currency": "SGD",
+            "rate": 0.01328,
+            "converted_amount": 796.8,
+            "rate_date": "2026-09-14"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "captured_at": "2026-09-14T13:57:40.109346+00:00",
+  "question": "What exhibits can I visit in Singapore's fictional Merlion Moon Observatory?",
+  "checks": {
+    "unsupported_knowledge": true,
+    "semantic_router_fallback": true
+  },
+  "response": {
+    "markdown": "I do not have enough information in the travel knowledge base to answer that reliably. The grounded answer could not be generated or verified. Check the configured LLM connection and try again.\n\n### Knowledge-base sources\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore)\n- [Three days in Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Three_days_in_Singapore)\n\n_Retrieved text: Wikivoyage contributors, CC BY-SA 4.0. Sources are dated travel knowledge, not verified current prices or rules._",
+    "provenance": {
+      "route": "destination_kb",
+      "rag_ran": true,
+      "sources": [
+        {
+          "source_id": "wikivoyage_marina_bay",
+          "source_title": "Singapore/Marina Bay \u2013 Travel guide at Wikivoyage",
+          "source_url": "https://en.wikivoyage.org/wiki/Singapore/Marina_Bay",
+          "section": "See / Marina Bay Sands",
+          "document_type": "travel_knowledge"
+        },
+        {
+          "source_id": "wikivoyage_singapore",
+          "source_title": "Singapore \u2013 Travel guide at Wikivoyage",
+          "source_url": "https://en.wikivoyage.org/wiki/Singapore",
+          "section": "Buy / Souvenirs",
+          "document_type": "travel_knowledge"
+        },
+        {
+          "source_id": "wikivoyage_three_days",
+          "source_title": "Three days in Singapore \u2013 Travel guide at Wikivoyage",
+          "source_url": "https://en.wikivoyage.org/wiki/Three_days_in_Singapore",
+          "section": "Day 1 / Evening",
+          "document_type": "travel_knowledge"
+        }
+      ],
+      "tools": {}
+    }
+  },
+  "fallback_route": "destination_kb"
+}

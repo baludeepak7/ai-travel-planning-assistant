@@ -1,0 +1,88 @@
+{
+  "captured_at": "2026-09-15T06:24:09.518070+00:00",
+  "results": [
+    {
+      "question": "What functions do the Supertrees at Gardens by the Bay serve?",
+      "passed": true,
+      "response": {
+        "markdown": "### Knowledge Base\n\n_Dated source excerpts; descriptions of exhibitions, prices and hours are not verified current information._\n\n- The Supertrees support vertical planting. [Gardens by the Bay Singapore | Sky Garden & Light Show](https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/marina-bay/gardens-by-the-bay/)\n\n- Their functions include harvesting rainwater, producing solar energy and ventilating conservatories. [Gardens by the Bay Singapore | Sky Garden & Light Show](https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/marina-bay/gardens-by-the-bay/)\n\n- Super trees tower over the rest of the gardens, built to mimic real-life trees using technology such as solar cells. [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay)\n\n### Knowledge-base sources\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay) \u2014 Wikivoyage contributors; CC BY-SA 4.0; reviewed/retrieved 2026-09-11T13:23:09.904083+00:00\n- [Gardens by the Bay Singapore | Sky Garden & Light Show](https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/marina-bay/gardens-by-the-bay/) \u2014 Singapore Tourism Board (VisitSingapore); assignment factual summary of official source; Original factual summary; underlying website content is not CC BY-SA; reviewed/retrieved 2026-09-15\n\n_Attribution and content type are listed per source above. Sources are dated travel knowledge, not verified current prices or rules._",
+        "provenance": {
+          "route": "destination_kb",
+          "rag_ran": true,
+          "sources": [
+            {
+              "source_id": "wikivoyage_marina_bay",
+              "source_title": "Singapore/Marina Bay \u2013 Travel guide at Wikivoyage",
+              "source_url": "https://en.wikivoyage.org/wiki/Singapore/Marina_Bay",
+              "section": "See / Gardens and parks",
+              "document_type": "travel_knowledge",
+              "publisher": "Wikivoyage contributors",
+              "content_format": "adapted_snapshot",
+              "license": "CC BY-SA 4.0",
+              "retrieved_at": "2026-09-11T13:23:09.904083+00:00"
+            },
+            {
+              "source_id": "visitsingapore_gardens",
+              "source_title": "Gardens by the Bay Singapore | Sky Garden & Light Show",
+              "source_url": "https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/marina-bay/gardens-by-the-bay/",
+              "section": "Gardens by the Bay / Gardens and conservatories",
+              "document_type": "travel_knowledge",
+              "publisher": "Singapore Tourism Board (VisitSingapore)",
+              "content_format": "factual_summary",
+              "license": "Original factual summary; underlying website content is not CC BY-SA",
+              "retrieved_at": "2026-09-15"
+            }
+          ],
+          "tools": {}
+        }
+      }
+    },
+    {
+      "question": "What art does National Gallery Singapore collect?",
+      "passed": true,
+      "response": {
+        "markdown": "### Knowledge Base\n\n_Dated source excerpts; descriptions of exhibitions, prices and hours are not verified current information._\n\n- The gallery focuses on Southeast Asian art. [National Gallery: Singapore Art Gallery & Museum Guide](https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/civic-district/national-gallery-singapore/)\n\n- VisitSingapore describes a collection exceeding 8,000 works, spanning the nineteenth century onward. [National Gallery: Singapore Art Gallery & Museum Guide](https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/civic-district/national-gallery-singapore/)\n\n### Knowledge-base sources\n- [National Gallery: Singapore Art Gallery & Museum Guide](https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/civic-district/national-gallery-singapore/) \u2014 Singapore Tourism Board (VisitSingapore); assignment factual summary of official source; Original factual summary; underlying website content is not CC BY-SA; reviewed/retrieved 2026-09-15\n- [Singapore \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore) \u2014 Wikivoyage contributors; CC BY-SA 4.0; reviewed/retrieved 2026-09-11T13:23:07.736051+00:00\n- [Singapore/Marina Bay \u2013 Travel guide at Wikivoyage](https://en.wikivoyage.org/wiki/Singapore/Marina_Bay) \u2014 Wikivoyage contributors; CC BY-SA 4.0; reviewed/retrieved 2026-09-11T13:23:09.904083+00:00\n\n_Attribution and content type are listed per source above. Sources are dated travel knowledge, not verified current prices or rules._",
+        "provenance": {
+          "route": "destination_kb",
+          "rag_ran": true,
+          "sources": [
+            {
+              "source_id": "visitsingapore_national_gallery",
+              "source_title": "National Gallery: Singapore Art Gallery & Museum Guide",
+              "source_url": "https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/civic-district/national-gallery-singapore/",
+              "section": "National Gallery Singapore / Location and architecture",
+              "document_type": "travel_knowledge",
+              "publisher": "Singapore Tourism Board (VisitSingapore)",
+              "content_format": "factual_summary",
+              "license": "Original factual summary; underlying website content is not CC BY-SA",
+              "retrieved_at": "2026-09-15"
+            },
+            {
+              "source_id": "wikivoyage_singapore",
+              "source_title": "Singapore \u2013 Travel guide at Wikivoyage",
+              "source_url": "https://en.wikivoyage.org/wiki/Singapore",
+              "section": "Buy / Souvenirs",
+              "document_type": "travel_knowledge",
+              "publisher": "Wikivoyage contributors",
+              "content_format": "adapted_snapshot",
+              "license": "CC BY-SA 4.0",
+              "retrieved_at": "2026-09-11T13:23:07.736051+00:00"
+            },
+            {
+              "source_id": "wikivoyage_marina_bay",
+              "source_title": "Singapore/Marina Bay \u2013 Travel guide at Wikivoyage",
+              "source_url": "https://en.wikivoyage.org/wiki/Singapore/Marina_Bay",
+              "section": "See / Marina Bay Sands",
+              "document_type": "travel_knowledge",
+              "publisher": "Wikivoyage contributors",
+              "content_format": "adapted_snapshot",
+              "license": "CC BY-SA 4.0",
+              "retrieved_at": "2026-09-11T13:23:09.904083+00:00"
+            }
+          ],
+          "tools": {}
+        }
+      }
+    }
+  ]
+}

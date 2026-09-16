@@ -1,0 +1,42 @@
+sources:
+- id: visitsingapore_gardens
+  title: Gardens by the Bay Singapore | Sky Garden & Light Show
+  url: https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/marina-bay/gardens-by-the-bay/
+  local_file: data/raw/visitsingapore_gardens.md
+  publisher: Singapore Tourism Board (VisitSingapore)
+  content_format: factual_summary
+  license: Original factual summary; underlying website content is not CC BY-SA
+  attribution: Facts checked against the official VisitSingapore page; summary written for this assignment
+  retrieved_at: '2026-09-15'
+  refresh_mode: manual_review
+- id: visitsingapore_national_gallery
+  title: 'National Gallery: Singapore Art Gallery & Museum Guide'
+  url: https://www.visitsingapore.com/neighbourhood/featured-neighbourhood/civic-district/national-gallery-singapore/
+  local_file: data/raw/visitsingapore_national_gallery.md
+  publisher: Singapore Tourism Board (VisitSingapore)
+  content_format: factual_summary
+  license: Original factual summary; underlying website content is not CC BY-SA
+  attribution: Facts checked against the official VisitSingapore page; summary written for this assignment
+  retrieved_at: '2026-09-15'
+  refresh_mode: manual_review
+- id: wikivoyage_singapore
+  title: "Singapore \u2013 Travel guide at Wikivoyage"
+  url: https://en.wikivoyage.org/wiki/Singapore
+  local_file: data/raw/singapore_wikivoyage.md
+  license: CC BY-SA 4.0
+  attribution: Wikivoyage contributors; author history linked from original article
+  retrieved_at: '2026-09-11T13:23:07.736051+00:00'
+- id: wikivoyage_marina_bay
+  title: "Singapore/Marina Bay \u2013 Travel guide at Wikivoyage"
+  url: https://en.wikivoyage.org/wiki/Singapore/Marina_Bay
+  local_file: data/raw/singapore_marina_bay.md
+  license: CC BY-SA 4.0
+  attribution: Wikivoyage contributors; author history linked from original article
+  retrieved_at: '2026-09-11T13:23:09.904083+00:00'
+- id: wikivoyage_three_days
+  title: "Three days in Singapore \u2013 Travel guide at Wikivoyage"
+  url: https://en.wikivoyage.org/wiki/Three_days_in_Singapore
+  local_file: data/raw/singapore_itineraries.md
+  license: CC BY-SA 4.0
+  attribution: Wikivoyage contributors; author history linked from original article
+  retrieved_at: '2026-09-11T13:23:10.866666+00:00'
