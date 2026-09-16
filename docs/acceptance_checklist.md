@@ -50,16 +50,6 @@ Run `python -m pytest -q` for automated checks and `python scripts/verify_setup.
 configuration, index and discovery. The real-index tests need an ingested KB.
 `python scripts/acceptance.py` and `python scripts/live_ui_smoke.py` use real services and
 replace their timestamped reports. Keep the test directory for reproducibility.
-
-## Deliverables
-
-| Deliverable | Status | Location or action |
-|---|---|---|
-| Source code in a Git repository | Repository submission outstanding | Source exists locally; this folder is not a Git repository. No commit or push performed |
-| Working application | Completed | `app.py`, `src/`; setup in README |
-| Knowledge documents or acquisition instructions | Completed | `data/raw/`, manifest, attribution and refresh instructions |
-| README covering required technical topics | Completed | Architecture, sources, RAG, MCP, prompts, context and setup |
-| Sample questions and application responses | Completed | `sample_responses.md` and real response captures |
 | Short demonstration | Script ready; recording/presentation outstanding | Follow `demo_script.md` |
 
 Git is not needed to run the app, but omitting repository delivery requires agreement from
