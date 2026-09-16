@@ -66,4 +66,3 @@ It also records the preferences and answer from this multi-turn sequence:
 3. “Adjust it if rain is expected.”
 
 The captured context retains group size, date, duration and walking preference.
-See [the demonstration script](demo_script.md) to reproduce the workflow.
