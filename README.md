@@ -4,6 +4,10 @@ A context-aware Singapore travel assistant combining document-based destination 
 with weather forecasts and currency conversion through MCP. The Streamlit interface
 separates knowledge-base facts, MCP information and AI recommendations, with citations.
 
+## GITHUB REPOSITORY
+
+https://github.com/baludeepak7/ai-travel-planning-assistant.git
+
 ## Completed assignment requirements
 
 | Requirement | Implementation |
